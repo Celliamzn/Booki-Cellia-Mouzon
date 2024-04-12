@@ -407,11 +407,14 @@ a {
     
     .hebergements {
         width: 100%;
+        background-color: white !important;
+        display: flex;
+        flex-direction: column;
     }
     
     .populaires {
         width: 100%;
-        border-radius: 0;
+        border-radius: 0 !important;
     }
 
     .populaires-cards {
