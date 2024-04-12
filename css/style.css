@@ -209,7 +209,7 @@ a {
     grid-template-columns: 33% 33% 33%;
     grid-gap: 10px;
 }
-.hebergements h2 {
+.hebergements h1 {
     grid-column: 1/4;
 }
 .card-hebergement  {
@@ -284,7 +284,34 @@ a {
     background-color: #d9d9d9;
 }
 
+/*************** ACTIVITES **************/
 
+.activites {
+    width: 100%;
+}
+
+ .grille-activite {
+    display: flex;
+}
+
+.card h2 {
+    margin-left: 10px;
+}
+
+.grille-activite .card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 10px ;
+}
+
+.grille-activite img {
+    border-radius: 15px 15px 0 0;
+   height: 380px;
+   width: 100%;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -319,6 +346,10 @@ a {
     
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .grille-activite img {
+        height: 200px;
     }
 }
 
@@ -399,7 +430,7 @@ a {
     }
     
     /** Hebergements **/
-
+    
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         width: 100%;
@@ -415,13 +446,29 @@ a {
     .populaires {
         width: 100%;
         border-radius: 0 !important;
-    }
 
+    }
+    
     .populaires-cards {
         flex-direction: column;
     }
-
+    
     .populaires-cards a {
         width: 100%;
+    }
+
+    .grille-activite {
+        flex-direction: column;
+    }
+
+    .grille-activite .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hebergements,
+    .activites,
+    .populaires {
+        padding: 5px !important;
     }
 }
