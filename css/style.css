@@ -49,6 +49,9 @@ span  {
 
 /*** formualire ***/
 
+input {
+    font-weight: bold;
+}
 .rechercher{
     color :#f2f2f2;
     background-color: #0065FC;
@@ -477,7 +480,7 @@ footer h2 {
     }
     
     .info {
-        margin-bot: 0;
+        margin-bottom: 0;
     }
 
     main {
