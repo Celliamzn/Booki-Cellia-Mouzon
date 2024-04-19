@@ -1,34 +1,4 @@
-/****** Entête de page */
-header {
-    display: flex;
-    justify-content: space-between;
-} 
-
-.hautpage {
-    display: flex;
-}
-
-.entete {
-    margin: 0px 27px;
-    padding: 24px 0;
-    border: none;
-}
-
-.entete:hover {
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
-}
-
-.logo {
-    height: 19px;
-    margin: 30px 0;
-}
-
-button {
-    font-size: 16px;
-}
-
-/****** General ***********/
+/* Genéral*/
 
 h1 {
     font-size: 22px;
@@ -42,102 +12,11 @@ h2 {
     font-size: 16px;
 }
 
-span  {
-    font-weight: bold;
-}
-
-/*** formualire ***/
-
-input {
-    font-weight: bold;
-}
-.rechercher{
-    color :#f2f2f2;
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    padding: 15px;
-    border: none; 
-}
-
-.rechercher span {
+body {
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
-
-.rechercher img {
-    display: none;
-}
-
-#ville {
-    padding: 15px;
-    appearance: none;
-    border: none;
-    border-bottom: 1px #f2f2f2 solid;
-    border-top: 1px #f2f2f2 solid;
-    outline: none;
-    
-}
-
-.marker {
-    height: 50px;
-    border: none;
-    border-radius: 15px 0 0 15px;
-    padding: 0 20px;
-    background-color:  #f2f2f2;
-}
-
-.marker:hover,
-button.rechercher:hover {
-    opacity: 0.65;
-}
-
-.searchbar {
-    display: flex;
-    margin: 30px 0;
-}
-
-/** filtres **/
-.filtres {
-    display: flex;
-}
-
-.filtres button {
-    border-radius: 30px;
-    border: 2px #d9d9d9 solid;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 12px;
-}
-
-.filtres span{
-    padding-right: 10px;
-}
-.filtres img {
-    padding:0 10px;
-}
-
-.filtres button:hover {
-    background-color: #DEEBFF;
-}
-
-
-/** info **/
-
-.info img {
-    border: 1px #d9d9d9 solid;
-    border-radius: 100%;
-    height: 20px;
-    padding: 5px 10px;
-    margin-right: 10px;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    margin : 20px 0;
-}
-
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -153,14 +32,132 @@ button.rechercher:hover {
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
     cursor: pointer;
 }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.logo {
+    height: 19px;
+    margin: 30px 0;
+}
+
+nav {
+    display: flex;
+}
+
+.ancre {
+    margin: 0px 27px;
+    padding: 24px 0;
+    border: none;
+}
+
+.ancre:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+}
+
+/* Partie infogroup 
+Formulaire de recherche */
+
+.searchbar {
+    display: flex;
+    margin: 30px 0;
+}
+
+.marker {
+    height: 50px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    padding: 0 20px;
+    background-color:  #f2f2f2;
+}
+
+input {
+    font-weight: bold;
+    padding: 15px;
+    appearance: none;
+    border: none;
+    border-bottom: 1px #f2f2f2 solid;
+    border-top: 1px #f2f2f2 solid;
+    outline: none;
+}
+
+.rechercher{
+    color :#f2f2f2;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+    border: none; 
+    font-weight: bold
+}
+
+/* On cache la loupe en desktop pour l'afficher en téléphone */
+.rechercher i {
+    display: none;
+}
+
+/* Ajout style aux cliquables pour plus de réalisme */
+.marker:hover,
+button.rechercher:hover {
+    opacity: 0.65;
+}
+
+.card:hover {
+    background-color: #d9d9d9;
+}
+
+/*Partie filtres*/
+
+.filtres {
+    display: flex;
+}
+
+.filtres a  {
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px #d9d9d9 solid;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
+    padding-right: 10px;
+}
+
+.filtres i {
+    padding:0 10px;
+}
+
+.filtres a:hover {
+    background-color: #DEEBFF;
+}
+
+
+/* Partie information */
+
+.info i {
+    border: 1px #d9d9d9 solid;
+    border-radius: 100%;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.info {
+    margin : 20px 0;
+}
+
+/* Main-container */
 
 .main-container {
     width: 100%;
@@ -169,10 +166,7 @@ button {
     box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+/* Général cards */
 
 .section-title {
     margin: 0;
@@ -202,7 +196,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
+/* Général hebergements-and-populaires **/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -215,7 +209,7 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/* Hebergements */
 .hebergements {
     width: 65%; 
     display: flex;
@@ -232,6 +226,7 @@ a {
 .hebergements h1 {
     margin: 0;
 }
+/* Cards hebergements*/
 .card-hebergement  {
     width: 30%;
 }
@@ -260,7 +255,7 @@ a {
 .card-content .card-rating {
     margin: 0 0 0 5px ;
 }
-/****** Populaires ***********/
+/* Populaires */
 .populaires {
     width: 32%;
 }
@@ -305,22 +300,19 @@ a {
     margin-bottom: 5px;
 }
 
-.card:hover {
-    background-color: #d9d9d9;
-}
-
-/*************** ACTIVITES **************/
+/* Activités */
 
 .activites {
     width: 100%;
 }
 
-.activites h1 {
+.activites h2 {
     margin: 50px 10px 30px ;
 }
 .activites h3 {
     font-size: 16px;
-    padding-left: 15px;
+    padding-left: 15px; 
+    height: 30px;
 }
 
 .grille-activite {
@@ -340,17 +332,13 @@ a {
     margin: 0 10px ;
 }
 
-.activites .card h3 {
-    height: 30px;
-}
-
 .grille-activite img {
     border-radius: 15px 15px 0 0;
     height: 380px;
     width: 100%;
 }
 
-/***** footer *********/
+/* Footer */
 
 footer {
     display: flex;
@@ -366,7 +354,7 @@ footer div {
     flex-direction: column;
     margin-bottom: 20px;
 }
-footer div a {
+footer a {
     margin: 5px 0;
 }
 
@@ -379,10 +367,6 @@ footer h2 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    
-    /**** général ****/
-    
-    
     
     .hebergements-and-populaires {
         flex-direction: column;
@@ -423,51 +407,59 @@ footer h2 {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    body {
-        margin: 0;
-    }
     
+    /* Général */
     .main-container{
         padding: 0;
         display: flex;
         flex-direction: column;
+    }   
+   
+    main {
+        align-items: center;
+        padding: 0;
     }
     
-    /** entête **/
+    /** Header **/
     
     header {
         flex-direction: column ;
         align-items: center;
     }
     
-    .hautpage {
+    header nav {
         align-items: center;
         align-content: center;
         width: 100%;
         justify-content: space-around;
     }
     
-    .entete {
+    .ancre {
         border-bottom: 2px #F2F2F2 solid;
         margin: 0;
         text-align: center;
         width: 50%;
     }
     
-    .entete:hover {
+    .ancre:hover {
         border-top: none;
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
     }
-    
-    /** formulaire**/
+    /* Général infogroup */
+     .infogroup {
+       padding: 0 10px ;
+    }
+
+    /* Formulaire */
     
     .rechercher span {
         display: none;
     }
     
-    .rechercher img {
+    .rechercher i {
         display:flex;
+        color: white;
     }
     
     .rechercher {
@@ -477,17 +469,8 @@ footer h2 {
     #ville {
         width: 90%;
     }
-    
-    .info {
-        margin-bottom: 0;
-    }
 
-    main {
-        align-items: center;
-        padding: 0 10px;
-    }
-    
-    /** filtres **/
+    /* Filtres */
     
     .filtres {
         display: grid;
@@ -503,12 +486,12 @@ footer h2 {
         text-align: center;
     }
     
-    .filtres>button {
+    .filtres a {
         justify-content: flex-start; 
         padding: 9px 5px;
     }
     
-    /** Hebergements **/
+    /* Hebergements */
     
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -561,7 +544,7 @@ footer h2 {
         margin: 10px 0;
     }
 
-    /*** footer ****/ 
+    /* Footer */ 
     
     footer {
         flex-direction: column;
