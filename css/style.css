@@ -123,6 +123,7 @@ button.rechercher:hover {
 
 .filtres {
     display: flex;
+    align-items: center;
 }
 
 .filtres a  {
@@ -130,11 +131,11 @@ button.rechercher:hover {
     border-radius: 30px;
     border: 2px #d9d9d9 solid;
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 12px;
+    display: inline;
+    align-content: center;
+    margin-left: 10px;
     padding-right: 10px;
+    height: 40px;
 }
 
 .filtres i {
@@ -352,7 +353,15 @@ footer h2 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    
+    .filtres {
+        display: grid;
+        margin-bottom: 50px;
+    }
+
+    .filtres a {
+        padding: 10px
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
